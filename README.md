@@ -1,27 +1,31 @@
 # YoYo Clone Manager downloads
 
-## Experimental Android17 preview — d857eceb
+**Experimental debug build — Android 17 is not fully qualified.**
 
-**စမ်းသပ် build — Android17 အပြည့်အဝမအောင်သေးပါ။**
+Latest experimental build: **task-retention C2 (2026-10-20)**.
 
-Known issue: WebView data can appear saved but fail to reach disk. This is an UNQUALIFIED debug-signed preview, not a stable release. Physical Pixel10ProFold, full reliability/soak, GMS and financial-app compatibility are unverified. Do not rely on it for irreplaceable clone session data.
+- [Download APK](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/download/v0.4-20261020-task-retention-c2a4cc5a/YoYoCloneManager-0.4-task-retention-UNQUALIFIED-c2a4cc5a.apk)
+- [Download release](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/tag/v0.4-20261020-task-retention-c2a4cc5a)
+- [QR image](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/download/v0.4-20261020-task-retention-c2a4cc5a/YoYoCloneManager-download-QR.png)
+- [Known limitations](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/download/v0.4-20261020-task-retention-c2a4cc5a/NOTICE.txt)
+- [SHA-256 checksums](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/download/v0.4-20261020-task-retention-c2a4cc5a/SHA256SUMS.txt)
 
-- [Download experimental APK — 9.3 MB](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/download/v0.4-20261020-android17-preview-d857eceb/YoYoCloneManager-0.4-Android17-UNQUALIFIED-d857eceb.apk)
-- [Download QR code](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/download/v0.4-20261020-android17-preview-d857eceb/YoYoCloneManager-download-QR.png)
-- [Release notes and checksum](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/tag/v0.4-20261020-android17-preview-d857eceb)
+The Manager task-retention change passed 10/10 targeted checks on the recorded
+official Android 17 Pixel 10 Pro Fold emulator. This is not full Android 17
+compatibility. A separate original-app/distinct-package follow-up passed
+another 10/10 targeted checks (20 targeted checks across two suites). Original
+and guest unsaved pages and task/process identities survived Home/Recents/Open
+switching without Save, Remove or force-stop. This is background task
+switching; simultaneously visible split-screen windows were not tested.
 
-SHA-256: `d857eceb251d17c63418179d81fd3dba694aa86921144579e5ff951bf365d753`
+Intermittent WebView disk-save failure remains unresolved; full
+regression/resource/display/soak gates and physical Pixel 10 Pro Fold checks
+are incomplete. Financial-app and general Google-dependent app compatibility
+are unverified.
 
-arm64-v8a · com.yoyo.fixtureengine · version0.4/code4 · existing Android debug signing. Public availability does not change the failed functional qualification.
+Package `com.yoyo.fixtureengine`, v4/0.4, min SDK 23 / target 28 / compile 35,
+arm64-v8a, Android debug signed. Use disposable test instances.
 
-## Earlier Space Rename preview
+APK SHA-256: `c2a4cc5a5aced837646fa4d63098628469dfac229f35ec01b5017a5f115d4e54`
 
-The links below are retained as historical previews, not the Android17 experimental build above.
-
-Android preview APK downloads for YoYo Clone Manager.
-
-- [Download APK — 0.4, 20 October 2026](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/download/v0.4-20261020-space-rename/YoYoCloneManager-0.4-20261020-3457971f.apk)
-- [Download QR code](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/download/v0.4-20261020-space-rename/YoYoCloneManager-download-QR.png)
-- [Release details and SHA-256 checksum](https://github.com/ko-htut/yoyo-clone-manager-downloads/releases/tag/v0.4-20261020-space-rename)
-
-9.3 MB · arm64-v8a · debug-signed preview build. Existing full-release compatibility limitations are recorded in the release notes.
+Historical releases remain available from the repository release history.
